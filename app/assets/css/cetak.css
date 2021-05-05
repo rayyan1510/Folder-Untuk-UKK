@@ -1,0 +1,5 @@
+@media print{
+    .cetak{
+        display: none;
+    }
+}

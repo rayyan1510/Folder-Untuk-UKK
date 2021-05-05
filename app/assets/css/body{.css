@@ -1,0 +1,102 @@
+body{
+    font-family: montserrat;
+}
+
+.navigasi{
+    background-color: #34495e;
+}
+
+section {
+    background: url(../img/) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+@media (min-width: 990px){
+    .active {
+        border: 1px solid white;
+        border-radius: 10%;
+    }
+
+    .lk:hover{
+        border: 1px solid white;
+        transition: .5s;
+    }
+
+    .lk{
+        color: white;
+        padding: 7 10px;
+    }
+}
+
+/* navigasi */
+nav{
+    height: 80px;
+    background: #34495e;
+}
+
+/* logo/brand perushaan(aplikasi) */
+.navbar-brand{
+    font-size: 35px;
+    font-weight: bold;
+    color: white !important;
+}
+
+/* nav li{
+    margin: 0 8px;
+    line-height: 80px;
+} */
+
+/* navigasi link seperti home, about, dll*/
+.nav-link{
+    color: white !important;
+    font-size: 18px;
+    padding: 7px 10px;
+    text-transform: uppercase;
+}
+
+/* pc/laptop yg resolusi 1048px */
+@media (max-width: 1048px){
+    .logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    .nav-link{
+    font-size: 17px;
+    }
+}
+
+/* mobile */
+@media (max-width: 909px) {
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    a.active,
+    a:hover {
+        border: none;
+        color: #3498db;
+    }
+
+    nav ul.active {
+        left: 0;
+    }
+}
